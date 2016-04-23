@@ -1,0 +1,1 @@
+puts "yay day zero. It's so much fun without Josh."
