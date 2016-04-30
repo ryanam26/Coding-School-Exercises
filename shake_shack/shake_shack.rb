@@ -55,7 +55,7 @@ end
 
 
 #menu
-banana = Ingredient.new("banana",2)
+banana = Ingredient.new("banana",2)#instances
 nuts = Ingredient.new("Nuts",5)
 berries = Ingredient.new("Berries",3)
 chocolate_chips = Ingredient.new("Chocolate Chips",1)
