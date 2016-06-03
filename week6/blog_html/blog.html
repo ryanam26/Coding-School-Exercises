@@ -3,6 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="coolstuff.css">
 <title>Blog Page</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,14 +18,15 @@
 </headder>
 
 <section>
-
+<!-- <p class="intro bigtext">Lorem ipsum sic amet</p> -->
 <div>
-	<h2> This is going to be an awesome blog</h2>
-	<p>Date: Tuesday, May 13 2016</p>
-	<p>Author: Ryan Morrison.  Please visit my website ==> <a href="hhtp://.google.com"> Click Here!</a></p>
-	<p>A cool pic to look at: <img src="images/coffee_pic.jpg"></p>
-
-
+	<h2 class="subtitle"> This is going to be an awesome blog</h2>
+	<p class="first">Date: Tuesday, May 13 2016</p>
+	<p class="second">Author: Ryan Morrison.  Please visit my website ==> <a href="hhtp://.google.com"> Click Here!</a></p>
+	<p>A little about me:<br>I am from South Africa and have moved to Miami two years ago.  My mom is visiting from South Africa for 3 months and I have really enjoyed taking her around Miami.</p>
+	<div class="centered-image">
+		<img class="my1pic" src="images/gif.gif">
+	</div>
 
 </div>
 
@@ -32,7 +34,11 @@
 	<form> 
 	
     	<label form="">Name</label>
-    	<input type="text" name="my_field" placeholder="Please input your name">
+    	<input type="text" name="my_field" placeholder="Please input your name"><br>
+    	<label form="">Email</label>
+    	<input type="text" name="my_field" placeholder="Please input your email"><br><br>
+    	<label >Input Here:</label>
+    	<input class="box1" type="text" name="my_field" placeholder="Get started here!">
     
     	<button>Submit</button>
   	</form>
@@ -44,8 +50,8 @@
 <div>
 <h3>Comments</h3>
 	<ol> 
-  	<li>This is a comment
-  	<li>This is another comment
+  	<li>This is a comment</li>
+  	<li>This is another comment</li>
 </ol>
 
 </div>
@@ -59,3 +65,4 @@
 
 
 </body>
+</html>
