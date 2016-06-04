@@ -1,0 +1,35 @@
+body {
+		
+		color:green;
+		background-color:aqua;
+		font-family: verdana, arial, Geneva, arial black;
+		font-weight: normal;
+	}
+
+	
+	h1, h2 {
+		text-decoration: underline;
+		text-align: center;
+		text-decoration: underline;
+		}
+
+	p.para1 {
+		color:blue;
+		font-size:25px;
+		
+	}
+
+	p.para2 {
+		color:purple;
+		font-size:25px;
+
+		
+	}
+
+	p.para3 {
+		color: purple;
+		font-size: 25px;
+		font-style: italic;
+	}
+
+	
