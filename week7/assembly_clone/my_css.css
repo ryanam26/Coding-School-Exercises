@@ -1,0 +1,71 @@
+
+.outer-container{
+	background-color: #F0FFFF;
+	width:500px;
+	height:500px;
+}
+.row {
+	margin: 10px;
+}
+
+.top-pic {
+	width: 22px;
+	
+}
+
+img { 
+	float: left; 
+	color: rgba(0,0,0,0.1);
+}
+
+.whale { 
+	line-height: 19px; 
+}
+.bounty, .whale {
+	text-decoration: none;
+}
+
+.ninesix, .helpful {
+	text-decoration: none;
+}
+
+p {
+	padding-left: 10px;
+	
+}
+
+.dollar-icon {
+	background-color:orange;
+	border-radius: 25px;
+
+
+}
+
+.third-row {
+	padding-left: 30px;
+}
+
+.buttons {
+
+	    padding-left: 26px;
+	
+
+}
+
+.btn-group-sm.btn .btn-sm {
+    padding: 0px 9px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
