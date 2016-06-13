@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+
+
+gem "sinatra"
+gem "sinatra-contrib" # don't have to reload the page
+gem "imdb" # for getting the movies
+gem "pry"

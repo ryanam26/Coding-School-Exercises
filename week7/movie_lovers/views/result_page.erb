@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movies Trivia</title>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+
+
+	<h1>Which movie was made in <%=@randomMovie.year%>?</h1>
+
+	<%@movieSearch.each do | movie | %>
+		<% if @randomMovie.year== movie.year%>
+			<img src="<%= movie.poster %>" OnClick="alert('Yes, Correct!')"width="100"/>
+		<% else %>
+			<img src="<%= movie.poster %>" OnClick="alert('No, Incorrect!')"width="100"/>
+		<% end %>
+	<% end %>
+
+		</div>
+	</div>
+</div>
+	
+</body>
+</html>
+
+
+
+
+
+
