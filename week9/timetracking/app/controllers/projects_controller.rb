@@ -17,4 +17,16 @@ class ProjectsController < ApplicationController
 
 		redirect_to '/projects'
 	end
+
+	def show
+		
+			@project = Project.find_by(id:params[:id])
+			unless @project
+				render 'no_project_found'
+			end
+			
+
+
+
+	end
 end
