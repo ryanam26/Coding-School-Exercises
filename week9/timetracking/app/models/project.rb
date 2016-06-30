@@ -1,5 +1,8 @@
 class Project < ActiveRecord::Base
 	has_many :time_entries
+
+	validates :name, presence: true, uniqueness: true, length: {maximum: 30}, format: {with: /\A[a-zA-Z0-9]+/}
+	
 	def self.clean_old
 		where("created_at < ?",  1.week.ago).destroy_all
 	end
@@ -15,6 +18,6 @@ class Project < ActiveRecord::Base
 
 		hours = entries_in_month.sum { |e| e.hours}
 		minutes = entries_in_month.sum { |e| e.minutes}
-		(minutes/60)_ + hours
+		(minutes/60) + hours
 	end
 end
