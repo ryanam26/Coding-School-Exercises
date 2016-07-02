@@ -1,6 +1,7 @@
 <ul>
 	<% @projects.each do |project| %>
 		<li>
+			<%= link_to(project.name, project_time_entries_path(project)) %>
 			<% if project.description.blank? %>
 				<%= project.name %>
 				<% else %>
