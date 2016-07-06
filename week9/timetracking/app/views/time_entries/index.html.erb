@@ -1,3 +1,10 @@
+<%= link_to("Projects", projects_path) %>
+<% link_to("New Time Entry", new_project_time_entry_path) %>
+
+<% if flash[:notice] %>
+	<%= flash[:notice] %>
+	
+	<% end %>
 <h1><%= @project.name %></h1>
 <ol>
 	<% @time_entries.each do |time_entry| %>
@@ -7,16 +14,18 @@
 		<%=time_entry.hours %>
 		Minutes:
 		<%=time_entry.minutes %>
+		<% link_to "Edit TIme Entry", edit_project_time_entry_path(@project, time_entry) %>
 	</li>
+
+	<%=link_to 'Delete', project_time_entry_path(@project, time_entry), method: :delete, data: {confirm: "Are you sure?"} %>
 
 
 
 	
 	<% end %>
 
-	<li><%= link_to 'add entry', new_project_time_entry_path %></li>
-		<li><%= link_to 'Projects', projects_path %></li>
 </ol>
-
+<%= link_to 'add entry', new_project_time_entry_path %>
+		<%= link_to 'Projects', projects_path %>
 
 

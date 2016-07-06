@@ -3,9 +3,11 @@ Rails.application.routes.draw do
  get '/contact' => 'site#contact'
 
  resources :projects, only: [:index,:show, :new, :create] do
- 	resources :time_entries, only: [:index, :new, :create]
+ 	resources :time_entries, except: [:show]
  end
 
+
+ put '/project/:project_id/time_entries/:id/edit' => 'time_entries#edit'
  # get '/about' => 'site#about'
 
  # get '/projects' => 'projects#index'
