@@ -1,26 +1,69 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  </head>
+  <html>
+    <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <link href="style.css" rel="stylesheet">
+    </head>
   <body>
-  <p>Hi.</p>
-    <div class="container" style="margin-top: 50px;">
-      <button class="btn btn-primary hello-button">Do Something</button>
-    </div>
+    
+    <br>
+    <br>
+
+
+    <button id="disappear">Push Button to make all buttons disappear</button>
+    
+    <button id="reappear">Push Button to make all buttons reappear</button>
+
+    <button id="unicorn-mode">Multi-Colors</button>
+      
+    
+  <div class="container" style="margin-top: 50px;">
+
+
+      
+    <button class="btn btn-primary hello-button">Hello Button</button>
+      
+
+    
 
     <button class="js-pizza">Pizza</button>
     <br>
     <br>
+
+    <button data-hook="coffee donuts">Coffee</button>
   
     <button class="js-pizza">Empanada</button>
 
+    <button class="new-pizza">New-Pizza</button>
+
+    <form action="/my-handling-form-page" method="post">
+
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" />
+    </div>
+    <div>
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name" name="user-lastname" />
+    </div>
+    <div>
+        <label for="username">username</label>
+        <input type="text" id="user-name" />
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="text" id="password" />
+    </div>
+
+    <button class="submit">Submit</button>
+
+</form>
+  </div>
+
+
     <!-- always put javascript below -->
-    <script type="text/javascript">
-      $('.hello-button').on('click', function () {
-        alert('hello world')
-      })
-    </script>
+   
+    <script src="app.js"></script>
   </body>
-</html>
+  </html>
