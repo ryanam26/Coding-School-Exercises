@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+<br>
+
+	<button id="my_button">Get Character</button>
+
+	<ul id="character_list"></ul>
+
+	<div>
+
+	<form id="my_form" >
+        <label for="name">Name:</label>
+        <input class="require js-c-name" type="text" id="name" name="user_name" placeholder="enter name" />
+    
+    <br>
+    <br>
+
+    
+        <label for="name">Occupation:</label>
+        <input class="require js-c-occupation" type="text" id="name" name="occupation" placeholder="enter occupation" />
+    
+    <br>
+    <br>
+
+    
+        <label for="name">Weapon:</label>
+        <input class="require js-c-weapon" type="text" id="name" name="weapon" placeholder="enter weapon" />
+    
+    <br>
+    <br>
+
+    
+        <label for="name">Debt(optional):</label>
+        <input class="require js-c-debt" type="integer" id="name" name="debt" placeholder="enter debt" />
+        
+        <br>
+        <br>
+
+		 <input type="submit" value="Submit">
+
+    </form>
+
+    <br>
+    <br>
+
+
+	
+
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
