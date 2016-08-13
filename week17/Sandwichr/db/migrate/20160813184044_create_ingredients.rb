@@ -1,6 +1,6 @@
-class CreateIngriedients < ActiveRecord::Migration[5.0]
+class CreateIngredients < ActiveRecord::Migration[5.0]
   def change
-    create_table :ingriedients do |t|
+    create_table :ingredients do |t|
       t.string :name
       t.integer :calories
 
